@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DepartName extends Model
+class DepartNombre extends Model
 {
     public function users()
     {
