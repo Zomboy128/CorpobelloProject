@@ -12,7 +12,7 @@
                 <ul class="dropdown-menu pull-right">
 
                     <li>
-                        <a href="{{ Auth::user()->role->id == 1 ? route('admin.settings') : route('author.settings')}}"><i class="material-icons">settings</i>Settings</a>
+                        <a href=""><i class="material-icons">settings</i>Settings</a>
                     </li>
 
                     <li role="seperator" class="divider"></li>
@@ -44,58 +44,58 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/tag*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.tag.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">label</i>
                         <span>Tag</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/category*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.category.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">apps</i>
                         <span>Category</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/post*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.post.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">library_books</i>
                         <span>Posts</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/pending/post') ? 'active' : '' }}">
-                    <a href="{{ route('admin.post.pending') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">library_books</i>
                         <span>Pending Posts</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/favorite') ? 'active' : '' }}">
-                    <a href="{{ route('admin.favorite.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">favorite</i>
                         <span>Favorite Posts</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/comments') ? 'active' : '' }}">
-                    <a href="{{ route('admin.comment.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">comment</i>
                         <span>Comments</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/authors') ? 'active' : '' }}">
-                    <a href="{{ route('admin.author.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">account_circle</i>
                         <span>Authors</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('admin/subscriber') ? 'active' : '' }}">
-                    <a href="{{ route('admin.subscriber.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">subscriptions</i>
                         <span>Subscribers</span>
                     </a>
                 </li>
                 <li class="header">System</li>
 
-                <li class="{{ Request::is('admin/settings') ? 'active' : '' }}">
-                    <a href="{{ route('admin.settings') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">settings</i>
                         <span>Settings</span>
                     </a>
@@ -113,38 +113,38 @@
                     </form>
                 </li>
             @endif
-            @if(Request::is('author*'))
-                <li class="{{ Request::is('author/dashboard') ? 'active' : '' }}">
-                    <a href="{{ route('author.dashboard') }}">
+            @if(Request::is('user*'))
+                <li class="{{ Request::is('user/dashboard') ? 'active' : '' }}">
+                    <a href="{{ route('user.dashboard') }}">
                         <i class="material-icons">dashboard</i>
-                        <span>Dashboard</span>
+                        <span>User Dashboard</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('author/post*') ? 'active' : '' }}">
-                    <a href="{{ route('author.post.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">library_books</i>
-                        <span>Posts</span>
+                        <span>USer Posts</span>
                     </a>
                 </li>
-                <li class="{{ Request::is('author/favorite') ? 'active' : '' }}">
-                    <a href="{{ route('author.favorite.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">favorite</i>
-                        <span>Favorite Posts</span>
+                        <span>User Favorite Posts</span>
                     </a>
                 </li>
 
-                <li class="{{ Request::is('author/comments') ? 'active' : '' }}">
-                    <a href="{{ route('author.comment.index') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">comment</i>
-                        <span>Comments</span>
+                        <span>User Comments</span>
                     </a>
                 </li>
 
                 <li class="header">System</li>
-                <li class="{{ Request::is('author/settings') ? 'active' : '' }}">
-                    <a href="{{ route('author.settings') }}">
+                <li class="">
+                    <a href="">
                         <i class="material-icons">settings</i>
-                        <span>Settings</span>
+                        <span>User Settings</span>
                     </a>
                 </li>
                 <li>
@@ -167,10 +167,10 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+            &copy; 2018 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
         </div>
         <div class="version">
-            <b>Version: </b> 1.0.5
+            <b>Version: </b> 1.0.0
         </div>
     </div>
     <!-- #Footer -->

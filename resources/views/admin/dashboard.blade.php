@@ -54,7 +54,7 @@
                     </div>
                     <div class="content">
                         <div class="text">TOTAL VIEWS</div>
-                        <div class="number count-to" data-from="0" data-to="{{ $all_views }}" data-speed="1000" data-fresh-interval="20"></div>
+                        <div class="number count-to" data-from="0" data-to="" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
             </div>
@@ -175,13 +175,13 @@
     <script src="{{ asset('assets/backend/plugins/chartjs/Chart.bundle.js') }}"></script>
 
     <!-- Flot Charts Plugin Js -->
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.time.js"></script>
+    <script src="{{ asset('assets/backend/plugins/flot-charts/jquery.flot.js') }}"></script>
+    <script src="{{ asset('assets/backend/plugins/flot-charts/jquery.flot.resize.js') }}"></script>
+    <script src="{{ asset('assets/backend/plugins/flot-charts/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('assets/backend/plugins/flot-charts/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('assets/backend/plugins/flot-charts/jquery.flot.time.js') }}"></script>
 
     <!-- Sparkline Chart Plugin Js -->
-    <script src="assets/backend/plugins/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="{{ asset('assets/backend/plugins/jquery-sparkline/jquery.sparkline.js') }}"></script>
     <script src="{{ asset('assets/backend/js/pages/index.js') }}"></script>
 @endpush

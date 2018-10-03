@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title') - {{ config('app.name', 'Corpobello') }}</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -68,9 +68,12 @@
     </div>
 </div>
 <!-- #END# Search Bar -->
+<section>
 <!-- Top Bar -->
     @include('layouts.backend.partial.topbar')
 <!-- #Top Bar -->
+</section>
+
 <section>
     <!-- Left Sidebar -->
     @include('layouts.backend.partial.sidebar')
@@ -88,7 +91,7 @@
 <script src="{{ asset('assets/backend/plugins/bootstrap/js/bootstrap.js') }}"></script>
 
 <!-- Select Plugin Js -->
-{{--<script src="{{ asset('assets/backend/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>--}}
+<script src="{{ asset('assets/backend/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
 
 <!-- Slimscroll Plugin Js -->
 <script src="{{ asset('assets/backend/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>

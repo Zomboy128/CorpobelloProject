@@ -19,7 +19,7 @@ Route::get('/','HomeController@index');
 Auth::routes();
 
 Route::group(['as'=>'admin.','prefix'=>'admin','namespace'=>'Admin','middleware'=>['auth','admin']], function() {
-	route::get('dashboard','DasboardController@index')->name('dashboard');
+	route::get('dashboard','DashboardController@index')->name('dashboard');
 });
 
 Route::group(['as'=>'user.','prefix'=>'user','namespace'=>'User','middleware'=>['auth','user']], function (){
