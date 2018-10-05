@@ -15,6 +15,14 @@ class CreatePacientesinfoTable extends Migration
     {
         Schema::create('pacientesinfo', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->string('genero');
+            $table->date('fecha_nacimiento');
+            $table->integer('telefono');
+            $table->char('estado');
+            $table->string('email')->nullable();
+            $table->integer('dui')->unique();
             $table->timestamps();
         });
     }
